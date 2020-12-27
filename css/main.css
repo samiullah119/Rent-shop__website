@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+:root {
+  --mainDark: #242325;
+  --mainGreen: #61e786;
+  --mainWhite: #fff;
+  --mainGrey: #eeeeee;
+}
+body {
+  font-family: "Mali", cursive;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+/* global */
+.text-green{
+  color: var(--mainGreen);
+}
+.text-slant{
+  font-family: "caveat" cursive;
+}
+.green__btn{
+  color: var(--mainGreen);
+  border: .1rem solid var(--mainGreen);
+  background: transparent;
+  transition: all ease .6s;
+}
+.green__btn:hover{
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.title-underline{
+  height: .3rem;
+  width: 12rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline-center{
+  position: absolute;
+  height: .6rem;
+  width: 6rem;
+  background-color: var(--mainGreen);
+  top:50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  border-radius: 1rem;
+}
+.blockquote{
+  border-left:.6rem solid var(--mainGreen);
+  border-top-left-radius: 1rem;
+
+}
+/* end  of global */
+.phone-icon{
+  color: var(--mainGreen);
+  padding: .3rem;
+  border: .1rem solid var(--mainGreen);
+  border-radius: 50%;
+  transition: all ease .5s;
+}
+.phone-icon:hover{
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.navbar-dark{
+  background: var(--mainDark)!important;
+}
+ .nav-link:hover{
+color: var(--mainGreen)!important;
+}
+/* banner */
+.banner-info{
+  min-height: calc(100vh - 101px);
+  background: var(--mainGrey);
+  position: relative;
+}
+.banner-info__footer{
+  background: var(--mainGreen);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+.banner-img{
+  min-width: calc(100vh - 101px);
+  background: url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+  position: relative;
+}
+.banner-img__footer{
+  background: var(--mainDark);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  
+}
+/* end of banner */
+/* about section */
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+.featured-img{
+  transition: all linear 1s;
+}
+.img-container:hover .featured-img{
+transform: scale(1.2);
+}
+.featured-icon{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.featured-icon-left{
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+  padding:.6rem ;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.featured-icon-right{
+  background-color: var(--mainDark);
+  color: var(--mainWhite);
+  padding:.6rem ;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+/* featured */
+.featured{
+  background: var(--mainGrey);
+}
+/* contact section */
+.contact{
+  background: var(--mainGreen);
+  color:var(--mainWhite)
+}
+.btn-contact{
+  background: transparent;
+  border:.2rem solid var(--mainWhite);
+  color: var(--mainWhite);
+  transition: all linear .3s;
+}
+.btn-contact:hover{
+  background-color: var(--mainWhite);
+  color: var(--mainGreen);
+
+}
+/* services section */
+.services{
+  background: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)),
+   url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+  min-height: 80vh;
+}
+.services-text-info{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+  text-decoration: none;
+  transition: all linear .4s;
+}
+.services-text-info:hover{
+  color: var(--mainDark);
+  text-decoration: none;
+}
+.service-icon{
+  font-size: 2rem;
+  color: var(--mainGreen);
+  padding: .5rem;
+  border: .2rem solid var(--mainGreen);
+  align-self: center;
+  margin: 0 1rem;
+  transition: all linear .4s;
+}
+.service-icon:hover{
+  color: var(--mainWhite);
+  background-color: var(--mainGreen);
+}
+.service-link{
+  transition: all linear .4s;
+}
+.service-link:hover{
+color: var(--mainWhite);
+text-decoration: none;
+}
+/* gallery style */
+.gallery-img-container{
+  position: relative;
+  transition: all linear 1s;
+  overflow: hidden;
+}
+.gallery-img-container:hover{
+  background: rgba(0,0,0,.9);
+ 
+}
+.gallery-img{
+  transition: all linear 1s;
+}
+.gallery-img-container:hover .gallery-img{
+ opacity: .3;
+ transform: scale(1.2);
+}
+.gallery-info{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% , 100%);
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+  
+  text-decoration: none;
+  transition: all linear .5s;
+}
+.gallery-info:hover{
+text-decoration: none;
+color: var(--mainDark);
+}
+.gallery-img-container:hover .gallery-info{
+  transform: translate(-50% , 0);
+}
+.gallery-icon{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%  -50%);
+  color: var(--mainWhite);
+  font-size: 2rem;
+  opacity: 0;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon{
+  opacity: .9;
+}
+/* tour style */
+.tour{
+  background: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)),
+   url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+  
+}
+.tour-icon{
+  color: var(--mainGreen);
+  font-size: 2rem;
+  padding: .7rem;
+  background-color: var(--mainWhite);
+  border-radius: 30%;
+  margin: 3rem;
+  cursor: pointer;
+  transition: all linear .4s;
+}
+.tour-icon:hover{
+  color: var(--mainWhite);
+  background-color: var(--mainGreen);
+}
+/* place nearby  */
+.space{
+  border-bottom: .2rem solid var(--mainGreen);
+}
+/* footer */
+.footer{
+  background: var(--mainDark);
+}
